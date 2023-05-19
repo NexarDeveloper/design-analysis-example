@@ -11,6 +11,9 @@ query releaseById ($releaseId: ID!, $first: Int, $after: String){
             name
         }
         variants {
+            pcbFabrication {
+                downloadUrl
+            }
             pcb {
                 documentId
                 documentName
